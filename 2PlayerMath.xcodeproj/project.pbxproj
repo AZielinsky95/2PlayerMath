@@ -13,6 +13,8 @@
 		CAFBA0862085154200B931B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFBA0852085154200B931B8 /* Assets.xcassets */; };
 		CAFBA0892085154200B931B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFBA0872085154200B931B8 /* LaunchScreen.storyboard */; };
 		CAFBA08C2085154200B931B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA08B2085154200B931B8 /* main.m */; };
+		CAFBA094208517CA00B931B8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA093208517CA00B931B8 /* Player.m */; };
+		CAFBA0992085182500B931B8 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA0982085182500B931B8 /* GameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		CAFBA0882085154200B931B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAFBA08A2085154200B931B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAFBA08B2085154200B931B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAFBA092208517CA00B931B8 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		CAFBA093208517CA00B931B8 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		CAFBA0972085182500B931B8 /* GameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		CAFBA0982085182500B931B8 /* GameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		CAFBA07B2085154200B931B8 /* 2PlayerMath */ = {
 			isa = PBXGroup;
 			children = (
+				CAFBA0962085180000B931B8 /* Model */,
+				CAFBA095208517F900B931B8 /* View */,
 				CAFBA07C2085154200B931B8 /* AppDelegate.h */,
 				CAFBA07D2085154200B931B8 /* AppDelegate.m */,
 				CAFBA07F2085154200B931B8 /* ViewController.h */,
@@ -69,6 +77,24 @@
 				CAFBA08B2085154200B931B8 /* main.m */,
 			);
 			path = 2PlayerMath;
+			sourceTree = "<group>";
+		};
+		CAFBA095208517F900B931B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAFBA0962085180000B931B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAFBA093208517CA00B931B8 /* Player.m */,
+				CAFBA092208517CA00B931B8 /* Player.h */,
+				CAFBA0972085182500B931B8 /* GameModel.h */,
+				CAFBA0982085182500B931B8 /* GameModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFBA094208517CA00B931B8 /* Player.m in Sources */,
 				CAFBA0812085154200B931B8 /* ViewController.m in Sources */,
+				CAFBA0992085182500B931B8 /* GameModel.m in Sources */,
 				CAFBA08C2085154200B931B8 /* main.m in Sources */,
 				CAFBA07E2085154200B931B8 /* AppDelegate.m in Sources */,
 			);
